@@ -1,10 +1,42 @@
-.idea
+# Dev files
+.idea/
+.vscode/
+
+# Docker files
 .dockerignore
-.gitignore
 Dockerfile
-node_modules
-npm-debug.log
-dist
-resources
-test
+docker-compose.yml
+
+# Git
+.git/
+.gitignore
+
+# Dependencies
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+out/
+build/
+
+# SQL
+resources/
+
+# Tests
+test/
+coverage/
+
+# Logs
+*.log
+
+# Docs
 *.md
+docs/
+
+# CI
+.travis.yml
+.github/
