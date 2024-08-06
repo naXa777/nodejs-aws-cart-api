@@ -21,6 +21,7 @@ USER node
 # Stage 3: Setup the runtime container
 FROM gcr.io/distroless/nodejs18-debian12 AS production
 
+WORKDIR /usr/src/app
 ENV NODE_ENV production
 COPY --chown=node:node --from=builder /usr/src/app/node_modules ./node_modules
 COPY --chown=node:node --from=builder /usr/src/app/dist ./dist
